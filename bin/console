@@ -1,0 +1,9 @@
+#!/usr/bin/env php
+<?php
+require_once __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '/../src/App/Commands/HelloworldCommand.php';
+use Symfony\Component\Console\Application;
+use Console\App\Commands\HelloworldCommand;
+$app = new Application();
+$app->add(new HelloworldCommand());
+$app->run();
